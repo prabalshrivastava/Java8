@@ -91,6 +91,6 @@ public class IntStreams {
     System.out.println("IntStream.of(numbers).mapToLong(value -> value* 100000000L).forEach(System.out::println);");
     IntStream.of(numbers).mapToLong(value -> value* 100000000L).forEach(System.out::println);
 
-    IntStream.of(numbers).noneMatch()
+//    IntStream.of(numbers).noneMatch();
   }
 }
