@@ -93,9 +93,9 @@ class OuterClass {
 //    - Record classes in Java automatically generate constructors for their components (fields). You don't need to explicitly define constructors for records.
 
 //    ```java
-record MyRecord(String name, int age) {
-  // Automatically generated constructor
-}
+//record MyRecord(String name, int age) {
+//  // Automatically generated constructor
+//}
 //   ```
 
 //       8. **Local Classes:**
