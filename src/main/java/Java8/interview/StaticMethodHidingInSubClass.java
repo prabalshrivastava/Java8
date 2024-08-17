@@ -49,7 +49,7 @@ public class StaticMethodHidingInSubClass {
 //    }
 //}
 //
-//public class Main {Static methods in Java are not inherited in the traditional sense. Unlike instance methods, static methods are associated with the class or interface itself rather than with instances of the class or implementing classes in the case of interfaces.
+//public class ChainingFutures {Static methods in Java are not inherited in the traditional sense. Unlike instance methods, static methods are associated with the class or interface itself rather than with instances of the class or implementing classes in the case of interfaces.
 //
 //When a subclass is created, it does not inherit static methods from its superclass. However, static methods can be accessed through the class itself. If a subclass defines a static method with the same signature as a static method in its superclass, it is said to hide the superclass's static method, but it's not really inheritance in the usual sense.
 //
@@ -68,7 +68,7 @@ public class StaticMethodHidingInSubClass {
 //    }
 //}
 //
-//public class Main {
+//public class ChainingFutures {
 //    public static void main(String[] args) {
 //        // Calling static method through the class itself
 //        Parent.staticMethod(); // Output: Static method in Parent

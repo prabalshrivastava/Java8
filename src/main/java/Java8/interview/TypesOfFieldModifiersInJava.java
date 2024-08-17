@@ -118,7 +118,7 @@ public class TypesOfFieldModifiersInJava {
         }
     }
 
-    // Main method for testing
+    // ChainingFutures method for testing
     public static void main(String[] args) {
         // Creating an instance of the outer class
         TypesOfFieldModifiersInJava example = new TypesOfFieldModifiersInJava();

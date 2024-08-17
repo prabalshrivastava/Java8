@@ -58,7 +58,7 @@ interface MySAMInterface {
 //    System.out.println("Static method in MySAMInterface");
 //  }
 //}
-//public class Main {
+//public class ChainingFutures {
 //  public static void main(String[] args) {
 //    // Using a lambda expression to implement the SAM interface
 //    MySAMInterface samInstance = () -> System.out.println("Lambda expression implementation");
