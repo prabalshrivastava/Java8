@@ -1,11 +1,11 @@
-package interview.bny;
+package interview;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Sol {
+public class BNY {
 
   public static void main(String[] args) {
     List<String> names = Arrays.asList("John", "John", "Tushar", "RAM", "Ram", "Sagar");

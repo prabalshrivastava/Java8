@@ -1,6 +1,5 @@
-package interview.paytm;
+package interview;
 
-import java.io.OptionalDataException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -9,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class Triplets {
+public class Paytm {
 //  Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 //
 //  Notice that the solution set must not contain duplicate triplets.

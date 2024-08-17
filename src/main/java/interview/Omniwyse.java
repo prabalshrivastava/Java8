@@ -1,4 +1,4 @@
-package interview.omniwyse;
+package interview;
 
 public class Omniwyse {
 

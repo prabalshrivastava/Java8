@@ -1,4 +1,4 @@
-package interview.pricevra;
+package interview;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,15 +6,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
-import java.util.Scanner;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 import java.util.stream.Collectors;
-import streams.IntStreams;
 
-public class Sol {
+public class Privacera {
 
   //  +++++
 //
@@ -68,7 +64,7 @@ public class Sol {
     list.add(7);
     list.add(8);
 
-    list.parallelStream().forEach(Sol::add);
+    list.parallelStream().forEach(Privacera::add);
     ExecutorService executorService = Executors.newSingleThreadExecutor();
     executorService.submit(() -> {
       Thread.sleep(1000);
