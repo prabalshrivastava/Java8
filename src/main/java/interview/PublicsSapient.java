@@ -1,9 +1,8 @@
-package interview.publics;// package whatever; // don't place package name!
+package interview;// package whatever; // don't place package name!
 // Installed Libraries: JSON-Simple, JUNit 4, Apache Commons Lang3
-import java.io.*;
 import java.util.*;
 
-class MyCode {
+class PublicsSapient {
 	public static void main (String[] args) {
 		// String str = "prabalpra";
 		String str = "pbrbpra";
