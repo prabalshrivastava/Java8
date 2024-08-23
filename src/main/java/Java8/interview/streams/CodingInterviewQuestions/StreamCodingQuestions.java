@@ -3,6 +3,7 @@ package Java8.interview.streams.CodingInterviewQuestions;
 import static java.util.List.of;
 
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
@@ -256,26 +257,53 @@ public class StreamCodingQuestions {
 
   private static void calculatePersonAgeInYear() {
     LocalDate birthDate = LocalDate.of(1998, 8, 17);
+    System.out.println("calculatePersonAgeInYear : " + Period.between(birthDate, LocalDate.now()));
+    System.out.println(
+        "calculatePersonAgeInYear : " + Period.between(birthDate, LocalDate.now()).getYears());
   }
 
   private static void lastElementInTheArray() {
     int[] intArray = {0, 1, 2, 3, 4, 5};
+    System.out.println("lastElementInTheArray : " +
+        Arrays.stream(intArray)
+            .boxed().reduce((first, second) -> second)
+            .orElse(-1));
   }
 
   private static void firstTenOddNumbers() {
+    System.out.println("firstTenOddNumbers : " +
+        Arrays.toString(IntStream.rangeClosed(0, 20).filter(i -> i % 2 != 0).toArray())
+    );
+
+    System.out.println("firstTenOddNumbers : " +
+        Stream.iterate(1, integer -> integer + 2).limit(10).toList());
   }
 
   private static void generateFibonacciSeries() {
+    //0 1 1 2 3 5 8 13
+    System.out.println("generateFibonacciSeries : " +
+        Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]})
+            .limit(10)
+            .map(arr -> arr[0]).toList()
+    );
 
   }
 
   private static void firstNonRepeatingCharacter() {
     String tempStr = "rohitrohi";
-
+    System.out.println("firstNonRepeatingCharacter : " +
+        Arrays.stream(tempStr.split(""))
+            .filter(s -> tempStr.indexOf(s) == tempStr.lastIndexOf(s))
+            .findFirst().orElse(null));
   }
 
   private static void checkIsTheStringPalindrome() {
     String str = "momd";
+    System.out.println("checkIsTheStringPalindrome : " +
+        IntStream.range(0, str.length())
+            .noneMatch(i -> str.charAt(i) != str.charAt(str.length() - 1 - i))
+    );
+
   }
 
   private static void firstRepeatedCharacter() {
